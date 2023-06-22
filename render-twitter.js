@@ -137,7 +137,7 @@ function processSheet(name, size, emojiPerRow, skinTone = false){
           parsedEmoji[index]
         );
 
-        ir = fs.readFileSync(`./72-polyfills/${codepoint}.png`)
+        ir = fs.readFileSync(`./72x72/${codepoint}.png`)
         img.src = ir
         ctx.drawImage(img, x, y, size, size);
       }catch(e){
